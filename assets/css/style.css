@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Outfit&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.2em;
+    color: white;
+    background-image: url(/assets/img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+.container{
+    width: 90%;
+    margin: 30px auto;
+}
+
+.logo{
+    width: 200px;
+
+}
+
+.title{
+    font-family: 'Outfit', sans-serif;
+    font-size: 7vw;
+    font-weight: 400;
+    line-height: 0.8em;
+    
+}
+
+.bold{
+    font-weight: 900;
+}
+
+.subtitle{
+    color: #D20094;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    border: 1px solid white;
+    width: 16px;
+    height: 16px;
+  }
+  
+  input[type="radio"]:checked {
+    background-color: white;
+  }
+
+  .button{
+    padding: 1em;
+  }
