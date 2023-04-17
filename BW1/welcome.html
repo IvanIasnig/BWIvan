@@ -10,17 +10,18 @@
 </head>
 
 <body>
+
+    <header>
+        <img src="assets/img/epicode_logo.png" alt="Logo - Epicode" class="logo">
+    </header>
     <div class="container">
-        <header>
-            <img src="assets/img/epicode_logo.png" alt="Logo - Epicode" class="logo">
-        </header>
         <main>
             <section>
                 <h1 class="title">Welcome to <br> <span class="bold">your exam</span></h1>
             </section>
             <section>
                 <h2 class="subtitle">Instructions</h2>
-                <p>We don't expect most engineers to know the answers to all of these <br> question, so don't worry if
+                <p>We don't expect most engineers to know the answers to all of these question, so don't worry if
                     you're unsure of a few of them.</p>
                 <ul>
                     <li>Each question is <span class="bold">timed</span> and can ony be <span class="bold">answered
@@ -30,15 +31,20 @@
                     <li>This exam will take approx. <span class="bold">0-5 minutes.</span></li>
                 </ul>
             </section>
-            <section>
-                <input type="radio" value="accettato" class="radio"> I promise to answer myself without help from anyone
-                <div>
-                    <button type="button" class="button">PROCEED</button>
-                </div>
-            </section>
+
         </main>
 
     </div>
+    <aside>
+        <div>
+            <input type="radio" value="accettato" class="radio" > I promise to answer myself without help from
+            anyone
+        </div>
+        <div>
+            <button type="button" class="button" onclick="window.location.href='test.html'" disabled>PROCEED</button>
+        </div>
+    </aside>
+    <script src="assets/js/welcome.js"></script>
 </body>
 
 </html>
