@@ -8,8 +8,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    line-height: 1.2em;
-    background-image: url(/assets/img/bg.jpg);
+    background-image: url(/BW1/assets/img/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -20,11 +19,11 @@ body {
 
 .container {
     width: 90%;
-    margin: 30px auto;
+    margin: 2vw auto;
 }
 
 .logo {
-    width: 200px;
+    width: 16vw;;
 }
 
 .title {
@@ -32,7 +31,7 @@ body {
     font-size: 6em;
     font-weight: 400;
     line-height: 0.8em;
-    margin-bottom: 0.4em;
+    margin-bottom: 4vw;
 }
 .bold {
     font-weight: 900;
@@ -42,24 +41,35 @@ body {
     font-weight: 900;    
     color: #D20094 ;
     margin-bottom: 0;
+    font-size: 1.8em;
+}
+h2 + p {
+    margin-bottom: 0;
+    margin-bottom: 2vw;
 }
 
-main:nth-child(2) {
+section:nth-child(2) {
     font-size: 1.2em;
-    line-height: 1.8em;
+    line-height: 1.6em;
 }
-
+p + ul {
+    margin-bottom: 6vw;
+}
+ 
 input[type='radio'] {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     border-radius: 0;
-    border: 1px solid white;
+    border: 2px solid white;
     width: 16px;
     height: 16px;
 }
 
-
 input[type='radio']:checked {
     background-color: white;
+}
+section:nth-child(3) {
+    font-size: 1em;
+    font-weight: 600;
 }
