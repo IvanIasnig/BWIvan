@@ -1,0 +1,35 @@
+Giorno 1 - Welcome Page
+
+HTML
+
+Div class container
+- header con logo alto a sinistra
+- main con 3 section
+
+section 1
+- Il titolo <h1>
+
+section 2
+- Un sottotitolo <h2>
+- Un paragrafo <p>
+- Un lista non ordinata <ul>
+
+section 3
+- un radio button
+- un button 
+
+CSS
+
+- Il container è allineato al centro occupando più o meno l'80% di larghezza
+- Il testo al suo interno è allineato a sinistra
+- margine tra l'header e il main
+- margine tra la seconda e ultima section
+- padding al bottone 
+- settare colori e font che vengono forniti in una foto della cartella assets
+
+
+
+
+JS
+- Se non clicco sul radio button non posso accedere alla pagina successiva
+- Quando clicco sul bottone "PROCED" accedo alla pagina succesiva
