@@ -122,12 +122,13 @@ function mostraDomanda(index) {
   });
 }
 
-
+mostraDomanda(a);
 x = setInterval(() => {
-  mostraDomanda(a);
   a++;
-  if (a >= questions.length) {
-    pippo(x);
+  if (a < questions.length) {
+    mostraDomanda;
+  } else {
+    pippo(x)
   }
 }, 5000);
 
