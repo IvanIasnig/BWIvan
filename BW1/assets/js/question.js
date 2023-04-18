@@ -104,14 +104,19 @@ function mostraDomanda(i) {
   buttonsContainerEl.innerHTML = "";
 
   const risposte = domanda.incorrect_answers.concat(domanda.correct_answer);
-  
-  risposte.forEach((risposta, index) => {
+
+
+
+  risposte.forEach((risposta) => {
     const labelEl = document.createElement("label");
     labelEl.classList.add("btn");
+
     const radioEl = document.createElement("input");
     radioEl.type = "radio";
     radioEl.name = "answer";
     radioEl.classList.add('radioClass');
+    radioEl.classList.add("radioClass");
+
     labelEl.appendChild(radioEl);
     labelEl.append(` ${risposta}`);
     buttonsContainerEl.appendChild(labelEl);
@@ -119,7 +124,7 @@ function mostraDomanda(i) {
 }
 
 for (let i = 0; i < questions.length; i++) {
-  setTimeout(mostraDomanda, i * 30000, i);
+  setTimeout(mostraDomanda, i * 1000, i);
 }
 
 mostraDomanda(0);
