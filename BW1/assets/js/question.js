@@ -120,17 +120,20 @@ function mostraDomanda(index) {
     labelEl.appendChild(radioEl);
     labelEl.append(` ${risposta}`);
     buttonsContainerEl.appendChild(labelEl);
+    labelEl.addEventListener("click", handleAnswerSelection);
   });
 }
 
+mostraDomanda(a);
+
 x = setInterval(() => {
-  mostraDomanda(a);
   a++;
-  if (a >= questions.length) {
+  if (a < questions.length) {
+    mostraDomanda(a);
+  } else {
     pippo(x);
   }
-}, 5000);
-
+}, 1000);
 
 function handleAnswerSelection() {
   a++;
@@ -140,7 +143,3 @@ function handleAnswerSelection() {
     pippo(x);
   }
 }
-
-buttonsContainerEl.addEventListener("click", handleAnswerSelection);
-
-mostraDomanda(a);
