@@ -131,6 +131,7 @@ x = setInterval(() => {
   }
 }, 5000);
 
+
 function handleAnswerSelection() {
   a++;
   if (a < questions.length) {
