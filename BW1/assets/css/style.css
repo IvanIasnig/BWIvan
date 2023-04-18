@@ -16,6 +16,7 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
 }
+
 header {
   padding: 2em 6em 0;
 }
@@ -38,9 +39,11 @@ main {
   line-height: 0.8em;
   margin-bottom: 4vw;
 }
+
 .bold {
   font-weight: 900;
 }
+
 .subtitle {
   font-family: "Outfit", sans-serif;
   font-weight: 900;
@@ -48,7 +51,8 @@ main {
   margin-bottom: 0;
   font-size: 1.8em;
 }
-h2 + p {
+
+h2+p {
   margin-bottom: 0;
   margin-bottom: 2vw;
 }
@@ -69,6 +73,7 @@ input[type="radio"] {
 input[type="radio"]:checked {
   background-color: white;
 }
+
 aside {
   font-size: 1em;
   font-weight: 600;
@@ -78,6 +83,7 @@ aside {
   padding: 0 6em;
   align-items: center;
 }
+
 div:nth-child(2) {
   margin-right: 15em;
 }
@@ -96,6 +102,30 @@ div:nth-child(2) {
 /*question*/
 
 .btn {
-  border-radius: 2vw;
-  border: solid 2px red;
+  padding: 0.5em;
+  border-top: 1px solid rgb(255, 255, 255);
+  border-left: 1px solid rgb(255, 255, 255, 0.85);
+  border-right: 1px solid rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.116);
+  border-radius: 42px;
+  margin: 0.5em;
+  width: 200px;
+}
+
+.radioclass{
+  display: none;
+}
+
+.btn:hover {
+  background-image: linear-gradient(
+      180deg,#d20094,#900080);
+    transition: 0.5s;
+}
+
+.buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
 }
