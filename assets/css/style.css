@@ -1,58 +1,99 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Outfit&display=swap');
-
-body{
+/* 
+font-family: 'Inter', sans-serif;
+font-family: 'Outfit', sans-serif;
+*/
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    line-height: 1.2em;
-    color: white;
-    background-image: url(/assets/img/bg.jpg);
+    background-image: url(/BW1/assets/img/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    color: white;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
 }
-
-.container{
-    width: 90%;
-    margin: 30px auto;
+header {
+    padding: 2em 6em 0;
 }
 
-.logo{
-    width: 200px;
+
+main {
+    width: 60%;
+    padding: 6em;
+    padding-top: 0;
 
 }
 
-.title{
+.logo {
+    width: 11vw;;
+}
+
+.title {
     font-family: 'Outfit', sans-serif;
-    font-size: 7vw;
+    font-size: 6em;
     font-weight: 400;
     line-height: 0.8em;
-    
+    margin-bottom: 4vw;
 }
-
-.bold{
+.bold {
     font-weight: 900;
 }
-
-.subtitle{
-    color: #D20094;
+.subtitle {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 900;
+    color: #D20094 ;
+    margin-bottom: 0;
+    font-size: 1.8em;
+}
+h2 + p {
+    margin-bottom: 0;
+    margin-bottom: 2vw;
 }
 
-input[type="radio"] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
+section:nth-child(2) {
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+ 
+input[type='radio'] {
     appearance: none;
     border-radius: 0;
-    border: 1px solid white;
+    border: 2px solid white;
     width: 16px;
     height: 16px;
-  }
-  
-  input[type="radio"]:checked {
-    background-color: white;
-  }
+}
 
-  .button{
-    padding: 1em;
-  }
+input[type='radio']:checked {
+    background-color: white;
+}
+aside {
+    font-size: 1em;
+    font-weight: 600;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 0 6em;
+    align-items: center;
+
+}
+div:nth-child(2) {
+    margin-right: 15em;
+}
+
+.button {
+    width: 200%;
+    height: 7vh;
+    font-size: 140%;
+    background-color: #00FFFF;
+    border-color: transparent;
+    font-family: 'Inter', sans-serif;
+    font-weight: bolder;
+    box-shadow: 0 0 20px 1px #00FFFF;
+}
+
+/* QUESTION PAGE */
+
+.btnTest{
+    text-decoration: none;
+}
