@@ -123,4 +123,14 @@ body {
   justify-content: space-around;
   width: 80%;
   margin: auto;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+
+}
+.titleQuest {
+    text-align: center;
 }
