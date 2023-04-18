@@ -123,7 +123,7 @@ function mostraDomanda(i) {
 }
 
 for (let i = 0; i < questions.length; i++) {
-  setTimeout(mostraDomanda, i * 1000, i);
+  setTimeout(mostraDomanda, i * 3000, i);
 }
 
 mostraDomanda(0);
