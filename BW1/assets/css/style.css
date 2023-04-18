@@ -1,10 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Outfit&display=swap");
 
-/* 
-font-family: 'Inter', sans-serif;
-font-family: 'Outfit', sans-serif;
-*/
-
 body {
   margin: 0;
   padding: 0;
@@ -16,12 +11,12 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
 }
-.head {
+
+.header1 {
   padding: 2em 6em 0;
 }
 
-/*welcome*/
-.main {
+welcome .main {
   width: 60%;
   padding: 6em;
   padding-top: 0;
@@ -38,9 +33,11 @@ body {
   line-height: 0.8em;
   margin-bottom: 4vw;
 }
+
 .bold {
   font-weight: 900;
 }
+
 .subtitle {
   font-family: "Outfit", sans-serif;
   font-weight: 900;
@@ -48,7 +45,8 @@ body {
   margin-bottom: 0;
   font-size: 1.8em;
 }
-.eng {
+
+.par {
   margin-bottom: 0;
   margin-bottom: 2vw;
 }
@@ -69,7 +67,8 @@ body {
 .radio:checked {
   background-color: white;
 }
-.aside {
+
+.aside1 {
   font-size: 1em;
   font-weight: 600;
   display: flex;
@@ -78,7 +77,8 @@ body {
   padding: 0 6em;
   align-items: center;
 }
-.secondDiv {
+
+.proceed {
   margin-right: 15em;
 }
 
@@ -92,8 +92,6 @@ body {
   font-weight: bolder;
   box-shadow: 0 0 20px 1px #00ffff;
 }
-
-/*question*/
 
 .btn {
   padding: 0.5em;
