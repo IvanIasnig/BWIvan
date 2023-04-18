@@ -121,10 +121,15 @@ function mostraDomanda(i) {
   });
 }
 
+
 for (let i = 0; i < questions.length; i++) {
-  setTimeout(mostraDomanda, i * 30000, i);
-}
+    setTimeout(mostraDomanda, i * 30000, i);
+  }
 
 mostraDomanda(0);
+
+
+
+
 
 
