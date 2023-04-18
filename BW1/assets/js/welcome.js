@@ -8,3 +8,4 @@ input.addEventListener("click", () => {
     button.setAttribute("disabled", true);
   }
 });
+
