@@ -111,7 +111,7 @@ function mostraDomanda(i) {
     const radioEl = document.createElement("input");
     radioEl.type = "radio";
     radioEl.name = "answer";
-    radioEl.classList.add('radioClass');
+    radioEl.classList.add("radioClass");
     labelEl.appendChild(radioEl);
     labelEl.append(` ${risposta}`);
     buttonsContainerEl.appendChild(labelEl);
