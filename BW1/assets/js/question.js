@@ -98,14 +98,15 @@ const questions = [
 const titleEl = document.querySelector(".titleQuest");
 const buttonsContainerEl = document.querySelector(".buttons-container");
 
-function mostraDomanda(i) {
-  const domanda = questions[i];
+let a = 0;
+let x;
+
+function mostraDomanda(index) {
+  const domanda = questions[index];
   titleEl.textContent = domanda.question;
   buttonsContainerEl.innerHTML = "";
 
   const risposte = domanda.incorrect_answers.concat(domanda.correct_answer);
-
-
 
   risposte.forEach((risposta) => {
     const labelEl = document.createElement("label");
@@ -122,8 +123,23 @@ function mostraDomanda(i) {
   });
 }
 
-for (let i = 0; i < questions.length; i++) {
-  setTimeout(mostraDomanda, i * 1000, i);
+x = setInterval(() => {
+  mostraDomanda(a);
+  a++;
+  if (a >= questions.length) {
+    pippo(x);
+  }
+}, 5000);
+
+function handleAnswerSelection() {
+  a++;
+  if (a < questions.length) {
+    mostraDomanda(a);
+  } else {
+    pippo(x);
+  }
 }
 
-mostraDomanda(0);
+buttonsContainerEl.addEventListener("click", handleAnswerSelection);
+
+mostraDomanda(a);
