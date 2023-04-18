@@ -119,19 +119,20 @@ function mostraDomanda(index) {
     labelEl.appendChild(radioEl);
     labelEl.append(` ${risposta}`);
     buttonsContainerEl.appendChild(labelEl);
+    labelEl.addEventListener("click", handleAnswerSelection);
   });
 }
 
 mostraDomanda(a);
+
 x = setInterval(() => {
   a++;
   if (a < questions.length) {
-    mostraDomanda;
+    mostraDomanda(a);
   } else {
-    pippo(x)
+    pippo(x);
   }
-}, 5000);
-
+}, 1000);
 
 function handleAnswerSelection() {
   a++;
@@ -141,7 +142,3 @@ function handleAnswerSelection() {
     pippo(x);
   }
 }
-
-buttonsContainerEl.addEventListener("click", handleAnswerSelection);
-
-mostraDomanda(a);
