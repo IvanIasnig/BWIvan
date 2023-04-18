@@ -16,12 +16,12 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
 }
-header {
+.head {
   padding: 2em 6em 0;
 }
 
 /*welcome*/
-main {
+.main {
   width: 60%;
   padding: 6em;
   padding-top: 0;
@@ -48,17 +48,17 @@ main {
   margin-bottom: 0;
   font-size: 1.8em;
 }
-h2 + p {
+.eng {
   margin-bottom: 0;
   margin-bottom: 2vw;
 }
 
-section:nth-child(2) {
+.section2 {
   font-size: 1.2em;
   line-height: 1.6em;
 }
 
-input[type="radio"] {
+.radio {
   appearance: none;
   border-radius: 0;
   border: 2px solid white;
@@ -66,10 +66,10 @@ input[type="radio"] {
   height: 16px;
 }
 
-input[type="radio"]:checked {
+.radio:checked {
   background-color: white;
 }
-aside {
+.aside {
   font-size: 1em;
   font-weight: 600;
   display: flex;
@@ -78,7 +78,7 @@ aside {
   padding: 0 6em;
   align-items: center;
 }
-div:nth-child(2) {
+.secondDiv {
   margin-right: 15em;
 }
 
