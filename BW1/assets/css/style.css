@@ -151,38 +151,45 @@ body {
   bottom: 0;
   padding-left: 45%;
   padding-bottom: 3%;
-};
+}
 
-.containerCircle{
+.containerCircle {
   display: flex;
   justify-content: flex-end;
   margin-right: 3.5em;
 }
 
-.circular-progress{
+.circular-progress {
   position: relative;
   height: 160px;
   width: 160px;
   border-radius: 50%;
-  background: conic-gradient( #D5D5DA 12deg, #0B113B 0deg);
+  background: conic-gradient( #0b113b 0deg, #d5d5da 0deg);
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.circular-progress::before{
+.circular-progress::before {
   content: "";
   position: absolute;
   height: 130px;
   width: 130px;
   border-radius: 50%;
-  background-image: radial-gradient(circle at 37.72% 119.64%, #ff9fff 0, #c787ff 25%, #8f6cd8 50%, #5c51a9 75%, #31397e 100%);
+  background-image: radial-gradient(
+    circle at 37.72% 119.64%,
+    #ff9fff 0,
+    #c787ff 25%,
+    #8f6cd8 50%,
+    #5c51a9 75%,
+    #31397e 100%
+  );
 }
-.progress-value{
+.progress-value {
   position: relative;
   font-size: 40px;
   font-weight: 600;
   color: white;
-};
+}
 
 /*Pagina Results*/
 
