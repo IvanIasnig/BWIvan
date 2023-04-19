@@ -98,6 +98,7 @@ const questions = [
 const titleEl = document.querySelector(".titleQuest");
 const buttonsContainerEl = document.querySelector(".buttons-container");
 
+
 let a = -1;
 let x;
 let corrCount = 0;
@@ -125,6 +126,7 @@ function mostraDomanda(index) {
     if (risposta === domanda.correct_answer) {
       radioEl.addEventListener("click", () => {
         corrCount++;
+        sessionStorage.setItem(1, corrCount);
       });
     }
   });
@@ -150,7 +152,11 @@ function gestore() {
         mostraDomanda(a);
       } else {
         clearInterval(x);
+        window.location.href="results.html"
       }
     }, 30000);
+  } else {
+    window.location.href="results.html"
   }
 }
+

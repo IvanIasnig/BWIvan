@@ -149,7 +149,9 @@ body {
 #contQuestion {
   justify-content: center;
   position: fixed;
-  bottom: 0;
-  padding-left: 45%;
+  bottom:0;
+  padding-left:45%;
   padding-bottom: 3%;
 }
+
+
