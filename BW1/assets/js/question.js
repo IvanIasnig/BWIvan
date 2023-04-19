@@ -135,6 +135,7 @@ function mostraDomanda(index) {
 gestore();
 
 mostraDomanda(a);
+
 document.querySelector("#piePagina").innerHTML = a + 1;
 
 function gestore() {
