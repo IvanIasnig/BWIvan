@@ -17,7 +17,7 @@ const questions = [
     type: "multiple",
     difficulty: "easy",
     question:
-      "In the programming language Java, which of these keywords would you put on a variable to make sure it doesn&#039;t get modified?",
+      "In the programming language Java, which of these keywords would you put on a variable to make sure it doesn't get modified?",
     correct_answer: "Final",
     incorrect_answers: ["Static", "Private", "Public"],
   },
@@ -97,15 +97,19 @@ const questions = [
 
 const titleEl = document.querySelector(".titleQuest");
 const buttonsContainerEl = document.querySelector(".buttons-container");
+const scoreEl = document.getElementById("score");
 
-function mostraDomanda(i) {
-  const domanda = questions[i];
+let a = -1;
+let x;
+let corrCount = 0;
+
+function mostraDomanda(index) {
+  const domanda = questions[index];
   titleEl.textContent = domanda.question;
   buttonsContainerEl.innerHTML = "";
 
-  const risposte = domanda.incorrect_answers.concat(domanda.correct_answer);
-
-
+  let risp = domanda.incorrect_answers.concat(domanda.correct_answer);
+  let risposte = risp.sort(() => Math.random() - 0.5);
 
   risposte.forEach((risposta) => {
     const labelEl = document.createElement("label");
@@ -119,11 +123,37 @@ function mostraDomanda(i) {
     labelEl.appendChild(radioEl);
     labelEl.append(` ${risposta}`);
     buttonsContainerEl.appendChild(labelEl);
+    radioEl.addEventListener("click", gestore);
+    if (risposta === domanda.correct_answer) {
+      radioEl.addEventListener("click", () => {
+        corrCount++;
+        scoreEl.textContent = `Risposte corrette: ${corrCount}`;
+      });
+    }
   });
 }
 
-for (let i = 0; i < questions.length; i++) {
-  setTimeout(mostraDomanda, i * 1000, i);
+gestore();
+
+mostraDomanda(a);
+console.log(a);
+
+function gestore() {
+  a++;
+  console.log(a);
+  if (a < questions.length) {
+    mostraDomanda(a);
+    clearInterval(x);
+    x = setInterval(() => {
+      a++;
+      console.log(a);
+      if (a < questions.length) {
+        mostraDomanda(a);
+      } else {
+        clearInterval(x);
+      }
+    }, 30000);
+  }
 }
 
-mostraDomanda(0);
+
