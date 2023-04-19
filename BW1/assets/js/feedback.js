@@ -11,9 +11,9 @@ for (var i = 0; i < stars.length; i++) {
 function highlightStars() {
   for (var i = 0; i < stars.length; i++) {
     if (i < rating) {
-      stars[i].img 
+      stars[i].src = "./assets/img/star.svg";
     } else {
-      stars[i].classList.remove("checked");
+      stars[i].src = "./assets/img/blackStar.svg";
     }
   }
 } 
