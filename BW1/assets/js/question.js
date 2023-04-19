@@ -147,6 +147,7 @@ function gestore() {
     x = setInterval(() => {
       a++;
       document.querySelector("#piePagina").innerHTML = a + 1;
+
       if (a < questions.length) {
         mostraDomanda(a);
       } else {
