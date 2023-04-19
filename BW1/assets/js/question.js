@@ -192,6 +192,3 @@ function gestore() {
     window.location.href = "results.html";
   }
 }
-
-/* JS TIMER 
-*/
