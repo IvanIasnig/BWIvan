@@ -107,6 +107,7 @@ welcome .main {
 .radioClass {
   display: none;
 }
+
 .btn:hover {
   background-image: linear-gradient(180deg, #d20094, #900080);
   transition: 1s;
@@ -127,4 +128,44 @@ welcome .main {
   justify-content: space-around;
   align-items: center;
   align-content: center;
+}
+
+/* QUI INIZIA LO STYLE DEL TIMER
+*/
+.circleContainer{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.circle {
+  width: 160px;
+  height: 160px;
+  margin-right: 5em;
+}
+
+.secondCircle {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7)
+}
+
+.innerCircle {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+    -0.5px -0.5px 0px rgba(255, 255, 255, 1), 0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+
+.textCircle{
+  font-weight: 600px;
+  
 }
