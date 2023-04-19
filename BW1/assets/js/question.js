@@ -97,7 +97,7 @@ const questions = [
 
 const titleEl = document.querySelector(".titleQuest");
 const buttonsContainerEl = document.querySelector(".buttons-container");
-const scoreEl = document.getElementById("score");
+
 
 let a = -1;
 let x;
@@ -126,7 +126,6 @@ function mostraDomanda(index) {
     if (risposta === domanda.correct_answer) {
       radioEl.addEventListener("click", () => {
         corrCount++;
-        scoreEl.textContent = `Risposte corrette: ${corrCount}`;
       });
     }
   });
