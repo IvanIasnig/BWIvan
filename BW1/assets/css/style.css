@@ -16,10 +16,6 @@ body {
   padding: 2em 6em 0;
 }
 
-<<<<<<< HEAD
-=======
-/*welcome*/
->>>>>>> f104b9c8a2b9e809da681156e444b0c4bbae82f9
 
 .main {
   width: 60%;
@@ -136,7 +132,6 @@ body {
   justify-content: space-around;
   width: 80%;
   margin: auto;
-<<<<<<< HEAD
 }
 
 /*contatore*/
@@ -317,27 +312,4 @@ body {
   100% {
     transform: rotate(-3600deg);
   }
-=======
-  width: 100%;
-
-
-}
-
-.titleQuest {
-  font-family: "Outfit", sans-serif;
-  font-size: 3em;
-  font-weight: 400;
-  line-height: 0.8em;
-  margin-bottom: 4vw;
-  padding-top: 3em;
-}
-
-#colorTen {
-  color: #d20094;
-}
-#contQuestion {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
->>>>>>> f104b9c8a2b9e809da681156e444b0c4bbae82f9
 }
