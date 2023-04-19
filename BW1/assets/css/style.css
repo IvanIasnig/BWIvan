@@ -15,6 +15,9 @@ body {
 .header1 {
   padding: 2em 6em 0;
 }
+
+/*welcome*/
+
 .main {
   width: 60%;
   padding: 6em;
@@ -92,23 +95,35 @@ body {
   box-shadow: 0 0 20px 1px #00ffff;
 }
 
+/*question*/
+
 .btn {
-  padding: 0.5em;
+  padding: 2vh;
   border-top: 1px solid rgb(255, 255, 255);
   border-left: 1px solid rgb(255, 255, 255, 0.85);
   border-right: 1px solid rgb(255, 255, 255, 0.85);
   background-color: rgba(255, 255, 255, 0.116);
   border-radius: 42px;
   margin: 0.5em;
+  margin-bottom: 3vh;
   width: 40%;
 }
 
 .radioClass {
   display: none;
 }
+
 .btn:hover {
   background-image: linear-gradient(180deg, #d20094, #900080);
   transition: 1s;
+}
+
+.main2 {
+  width: 60%;
+  margin: auto;
+  padding: 6em;
+  padding-top: 0;
+  text-align: center;
 }
 
 .buttons-container {
@@ -118,130 +133,20 @@ body {
   justify-content: space-around;
   width: 80%;
   margin: auto;
-}
-
-/*contatore*/
-.pie {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background-color: #eee;
-  overflow: hidden;
-}
-
-.pie:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-color: #3498db;
-  transform-origin: left center;
-  transform: rotate(0deg);
-  animation: countdown 30s linear forwards;
+
+
 }
 
-@keyframes countdown {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(-360deg);
-  }
-  0% {
-    transform: rotate(0deg);
-  }
-  3.33% {
-    transform: rotate(-120deg);
-  }
-  6.66% {
-    transform: rotate(-240deg);
-  }
-  10% {
-    transform: rotate(-360deg);
-  }
-  13.33% {
-    transform: rotate(-480deg);
-  }
-  16.66% {
-    transform: rotate(-600deg);
-  }
-  20% {
-    transform: rotate(-720deg);
-  }
-  23.33% {
-    transform: rotate(-840deg);
-  }
-  26.66% {
-    transform: rotate(-960deg);
-  }
-  30% {
-    transform: rotate(-1080deg);
-  }
-  33.33% {
-    transform: rotate(-1200deg);
-  }
-  36.66% {
-    transform: rotate(-1320deg);
-  }
-  40% {
-    transform: rotate(-1440deg);
-  }
-  43.33% {
-    transform: rotate(-1560deg);
-  }
-  46.66% {
-    transform: rotate(-1680deg);
-  }
-  50% {
-    transform: rotate(-1800deg);
-  }
-  53.33% {
-    transform: rotate(-1920deg);
-  }
-  56.66% {
-    transform: rotate(-2040deg);
-  }
-  60% {
-    transform: rotate(-2160deg);
-  }
-  63.33% {
-    transform: rotate(-2280deg);
-  }
-  66.66% {
-    transform: rotate(-2400deg);
-  }
-  70% {
-    transform: rotate(-2520deg);
-  }
-  73.33% {
-    transform: rotate(-2640deg);
-  }
-  76.66% {
-    transform: rotate(-2760deg);
-  }
-  80% {
-    transform: rotate(-2880deg);
-  }
-  83.33% {
-    transform: rotate(-3000deg);
-  }
-  86.66% {
-    transform: rotate(-3120deg);
-  }
-  90% {
-    transform: rotate(-3240deg);
-  }
-  93.33% {
-    transform: rotate(-3360deg);
-  }
-  96.66% {
-    transform: rotate(-3480deg);
-  }
-  100% {
-    transform: rotate(-3600deg);
-  }
+.titleQuest {
+  font-family: "Outfit", sans-serif;
+  font-size: 3em;
+  font-weight: 400;
+  line-height: 0.8em;
+  margin-bottom: 4vw;
+  padding-top: 3em;
+}
+
+#colorTen {
+  color: #d20094;
 }
