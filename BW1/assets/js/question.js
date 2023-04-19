@@ -155,5 +155,3 @@ function gestore() {
     }, 30000);
   }
 }
-
-
