@@ -150,7 +150,11 @@ function gestore() {
         mostraDomanda(a);
       } else {
         clearInterval(x);
+        window.location.href="results.html"
       }
     }, 30000);
+  } else {
+    window.location.href="results.html"
   }
 }
+
