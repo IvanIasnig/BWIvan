@@ -125,14 +125,37 @@ function mostraDomanda(index) {
     if (risposta === domanda.correct_answer) {
       radioEl.addEventListener("click", () => {
         corrCount++;
+        resetTimer();
       });
     }
   });
+
+  resetTimer();
+}
+
+function resetTimer() {
+  clearInterval(x);
+  let circularProgress = document.querySelector(".circular-progress");
+  let progressValue = document.querySelector(".progress-value");
+  let progressStartValue = 0;
+  let progressEndValue = 30;
+  let speed = 1000;
+
+  x = setInterval(() => {
+    progressStartValue++;
+    progressValue.textContent = `${progressStartValue}`;
+    circularProgress.style.background = `conic-gradient(#ededede3 ${progressStartValue * 12}deg, #00ffff 0deg)`;
+
+    if (progressStartValue === progressEndValue) {
+      clearInterval(x);
+      gestore();
+    }
+  }, speed);
 }
 
 gestore();
-
 mostraDomanda(a);
+
 document.querySelector("#piePagina").innerHTML = a + 1;
 
 function gestore() {
@@ -141,16 +164,5 @@ function gestore() {
 
   if (a < questions.length) {
     mostraDomanda(a);
-    clearInterval(x);
-    x = setInterval(() => {
-      a++;
-      document.querySelector("#piePagina").innerHTML = a + 1;
-
-      if (a < questions.length) {
-        mostraDomanda(a);
-      } else {
-        clearInterval(x);
-      }
-    }, 30000);
   }
 }
