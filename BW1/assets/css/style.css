@@ -16,6 +16,10 @@ body {
   padding: 2em 6em 0;
 }
 
+<<<<<<< HEAD
+=======
+/*welcome*/
+>>>>>>> f104b9c8a2b9e809da681156e444b0c4bbae82f9
 
 .main {
   width: 60%;
@@ -94,23 +98,35 @@ body {
   box-shadow: 0 0 20px 1px #00ffff;
 }
 
+/*question*/
+
 .btn {
-  padding: 0.5em;
+  padding: 2vh;
   border-top: 1px solid rgb(255, 255, 255);
   border-left: 1px solid rgb(255, 255, 255, 0.85);
   border-right: 1px solid rgb(255, 255, 255, 0.85);
   background-color: rgba(255, 255, 255, 0.116);
   border-radius: 42px;
   margin: 0.5em;
+  margin-bottom: 3vh;
   width: 40%;
 }
 
 .radioClass {
   display: none;
 }
+
 .btn:hover {
   background-image: linear-gradient(180deg, #d20094, #900080);
   transition: 1s;
+}
+
+.main2 {
+  width: 60%;
+  margin: auto;
+  padding: 6em;
+  padding-top: 0;
+  text-align: center;
 }
 
 .buttons-container {
@@ -120,6 +136,7 @@ body {
   justify-content: space-around;
   width: 80%;
   margin: auto;
+<<<<<<< HEAD
 }
 
 /*contatore*/
@@ -300,4 +317,27 @@ body {
   100% {
     transform: rotate(-3600deg);
   }
+=======
+  width: 100%;
+
+
+}
+
+.titleQuest {
+  font-family: "Outfit", sans-serif;
+  font-size: 3em;
+  font-weight: 400;
+  line-height: 0.8em;
+  margin-bottom: 4vw;
+  padding-top: 3em;
+}
+
+#colorTen {
+  color: #d20094;
+}
+#contQuestion {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+>>>>>>> f104b9c8a2b9e809da681156e444b0c4bbae82f9
 }
