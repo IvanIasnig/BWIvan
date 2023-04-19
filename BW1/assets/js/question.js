@@ -175,7 +175,7 @@ function gestore() {
     resetTimer();
     x = setInterval(() => {
       a++;
-      document.querxSelector("#piePagina").innerHTML = a + 1;
+      document.querySelector("#piePagina").innerHTML = a + 1;
 
       if (a < questions.length) {
         mostraDomanda(a);
