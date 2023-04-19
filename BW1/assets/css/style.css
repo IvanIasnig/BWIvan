@@ -150,3 +150,8 @@ body {
 #colorTen {
   color: #d20094;
 }
+#contQuestion {
+  display: flex;
+  align-items: flex-end;
+
+}
