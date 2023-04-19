@@ -97,7 +97,6 @@ const questions = [
 
 const titleEl = document.querySelector(".titleQuest");
 const buttonsContainerEl = document.querySelector(".buttons-container");
-const scoreEl = document.getElementById("score");
 
 let a = -1;
 let x;
@@ -126,7 +125,6 @@ function mostraDomanda(index) {
     if (risposta === domanda.correct_answer) {
       radioEl.addEventListener("click", () => {
         corrCount++;
-        scoreEl.textContent = `Risposte corrette: ${corrCount}`;
       });
     }
   });
@@ -136,20 +134,17 @@ gestore();
 
 mostraDomanda(a);
 document.querySelector("#piePagina").innerHTML = a + 1;
-document.querySelector("#ciao").innerHTML = a + 1;
 
 function gestore() {
   a++;
   document.querySelector("#piePagina").innerHTML = a + 1;
 
-  document.querySelector("#ciao").innerHTML = a + 1;
   if (a < questions.length) {
     mostraDomanda(a);
     clearInterval(x);
     x = setInterval(() => {
       a++;
       document.querySelector("#piePagina").innerHTML = a + 1;
-      document.querySelector("#ciao").innerHTML = a + 1;
 
       if (a < questions.length) {
         mostraDomanda(a);
@@ -159,5 +154,3 @@ function gestore() {
     }, 30000);
   }
 }
-
-
