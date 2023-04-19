@@ -126,6 +126,12 @@ function mostraDomanda(index) {
       radioEl.addEventListener("click", () => {
         corrCount++;
         resetTimer();
+        sessionStorage.setItem(1, corrCount);
+      });
+    } else {
+      radioEl.addEventListener("click", () => {
+        clearInterval(x);
+        resetTimer();
       });
     }
   });
@@ -164,5 +170,22 @@ function gestore() {
 
   if (a < questions.length) {
     mostraDomanda(a);
+    clearInterval(x);
+    resetTimer();
+    x = setInterval(() => {
+      a++;
+      document.querySelector("#piePagina").innerHTML = a + 1;
+
+      if (a < questions.length) {
+        mostraDomanda(a);
+        clearInterval(x);
+        resetTimer();
+      } else {
+        clearInterval(x);
+        window.location.href="results.html"
+      }
+    }, 30000);
+  } else {
+    window.location.href="results.html"
   }
 }
