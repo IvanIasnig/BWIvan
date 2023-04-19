@@ -126,6 +126,7 @@ function mostraDomanda(index) {
     if (risposta === domanda.correct_answer) {
       radioEl.addEventListener("click", () => {
         corrCount++;
+        sessionStorage.setItem(1, corrCount);
       });
     }
   });
