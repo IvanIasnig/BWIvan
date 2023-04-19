@@ -154,3 +154,23 @@ function gestore() {
     }, 30000);
   }
 }
+
+/* JS TIMER 
+*/
+
+let circularProgress = document.querySelector(".circular-progress"),
+    progressValue = document.querySelector(".progress-value");
+
+let progressStartValue = setTimeout
+    progressEndValue = 30;
+
+let progress = setInterval(() => {
+    progressStartValue++;
+
+    progressValue.textContent = `${progressStartValue}`
+    circularProgress.style.background = `conic-gradient( #ededede3 ${progressStartValue * 3.6}deg, #00ffff 0deg)`
+
+    if(progressStartValue == progressEndValue){
+        clearInterval(progress);
+    }
+}, speed);
