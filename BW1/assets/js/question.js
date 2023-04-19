@@ -137,12 +137,12 @@ function resetTimer() {
   clearInterval(x);
   let circularProgress = document.querySelector(".circular-progress");
   let progressValue = document.querySelector(".progress-value");
-  let progressStartValue = 0;
-  let progressEndValue = 30;
+  let progressStartValue = 30;
+  let progressEndValue = 0;
   let speed = 1000;
 
   x = setInterval(() => {
-    progressStartValue++;
+    progressStartValue--;
     progressValue.textContent = `${progressStartValue}`;
     circularProgress.style.background = `conic-gradient(#ededede3 ${progressStartValue * 12}deg, #00ffff 0deg)`;
 

@@ -165,7 +165,7 @@ body {
   height: 160px;
   width: 160px;
   border-radius: 50%;
-  background: conic-gradient( #ededede3 3.6deg, #00ffff 0deg);
+  background: conic-gradient( #00ffff 3.6deg, #0B113B 0deg);
   display: flex;
   align-items: center;
   justify-content: center;
