@@ -1,5 +1,5 @@
 var rating = 0;
-var stars = document.querySelectorAll("#rating .fa-star");
+var stars = document.querySelectorAll("#rating .star");
 
 for (var i = 0; i < stars.length; i++) {
   stars[i].addEventListener("click", function() {
@@ -11,9 +11,9 @@ for (var i = 0; i < stars.length; i++) {
 function highlightStars() {
   for (var i = 0; i < stars.length; i++) {
     if (i < rating) {
-      stars[i].classList.add("checked");
+      stars[i].img 
     } else {
       stars[i].classList.remove("checked");
     }
   }
-}
+} 
