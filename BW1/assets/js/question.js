@@ -97,7 +97,6 @@ const questions = [
 
 const titleEl = document.querySelector(".titleQuest");
 const buttonsContainerEl = document.querySelector(".buttons-container");
-const scoreEl = document.getElementById("score");
 
 let a = -1;
 let x;
@@ -119,7 +118,6 @@ function mostraDomanda(index) {
     radioEl.type = "radio";
     radioEl.name = "answer";
     radioEl.classList.add("radioClass");
-
     labelEl.appendChild(radioEl);
     labelEl.append(` ${risposta}`);
     buttonsContainerEl.appendChild(labelEl);
@@ -127,7 +125,6 @@ function mostraDomanda(index) {
     if (risposta === domanda.correct_answer) {
       radioEl.addEventListener("click", () => {
         corrCount++;
-        scoreEl.textContent = `Risposte corrette: ${corrCount}`;
       });
     }
   });
@@ -136,17 +133,19 @@ function mostraDomanda(index) {
 gestore();
 
 mostraDomanda(a);
-console.log(a);
+document.querySelector("#piePagina").innerHTML = a + 1;
 
 function gestore() {
   a++;
-  console.log(a);
+  document.querySelector("#piePagina").innerHTML = a + 1;
+
   if (a < questions.length) {
     mostraDomanda(a);
     clearInterval(x);
     x = setInterval(() => {
       a++;
-      console.log(a);
+      document.querySelector("#piePagina").innerHTML = a + 1;
+
       if (a < questions.length) {
         mostraDomanda(a);
       } else {
@@ -155,5 +154,3 @@ function gestore() {
     }, 30000);
   }
 }
-
-
