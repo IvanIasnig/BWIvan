@@ -119,7 +119,6 @@ function mostraDomanda(index) {
     radioEl.type = "radio";
     radioEl.name = "answer";
     radioEl.classList.add("radioClass");
-
     labelEl.appendChild(radioEl);
     labelEl.append(` ${risposta}`);
     buttonsContainerEl.appendChild(labelEl);
@@ -136,16 +135,20 @@ function mostraDomanda(index) {
 gestore();
 
 mostraDomanda(a);
+document.querySelector("#piePagina").innerHTML = a + 1;
 document.querySelector("#ciao").innerHTML = a + 1;
 
 function gestore() {
   a++;
+  document.querySelector("#piePagina").innerHTML = a + 1;
+
   document.querySelector("#ciao").innerHTML = a + 1;
   if (a < questions.length) {
     mostraDomanda(a);
     clearInterval(x);
     x = setInterval(() => {
       a++;
+      document.querySelector("#piePagina").innerHTML = a + 1;
       document.querySelector("#ciao").innerHTML = a + 1;
 
       if (a < questions.length) {
@@ -156,3 +159,5 @@ function gestore() {
     }, 30000);
   }
 }
+
+
