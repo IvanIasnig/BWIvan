@@ -147,7 +147,6 @@ body {
   color: #d20094;
 }
 #contQuestion {
-  justify-content: center;
   position: fixed;
   bottom: 0;
   padding-left: 45%;
