@@ -139,22 +139,23 @@ function mostraDomanda(index) {
   resetTimer();
 }
 
+let y;
 function resetTimer() {
-  clearInterval(x);
+  clearInterval(y);
   let circularProgress = document.querySelector(".circular-progress");
   let progressValue = document.querySelector(".progress-value");
   let progressStartValue = 30;
   let progressEndValue = 0;
   let speed = 1000;
 
-  x = setInterval(() => {
+  y = setInterval(() => {
     progressStartValue--;
     progressValue.textContent = `${progressStartValue}`;
     circularProgress.style.background = `conic-gradient(#0B113B ${progressStartValue * 12}deg, #D5D5DA 0deg)`;
 
     if (progressStartValue === progressEndValue) {
-      clearInterval(x);
-      gestore();
+      clearInterval(y);
+      gestore()
     }
   }, speed);
 }
@@ -174,7 +175,7 @@ function gestore() {
     resetTimer();
     x = setInterval(() => {
       a++;
-      document.querySelector("#piePagina").innerHTML = a + 1;
+      document.querxSelector("#piePagina").innerHTML = a + 1;
 
       if (a < questions.length) {
         mostraDomanda(a);
