@@ -150,14 +150,14 @@ function resetTimer() {
 
   y = setInterval(() => {
     progressStartValue--;
-    progressValue.textContent = `${progressStartValue}`;
+    progressValue.innerHTML = `<div class="timer">SECONDS <br/> ${progressStartValue} <br/>remaining</div>`;
     circularProgress.style.background = `conic-gradient(#936799 ${
       progressStartValue * 12
     }deg, #00ffff 0deg)`;
 
     if (progressStartValue === progressEndValue) {
       clearInterval(y);
-      gestore()
+      gestore();
     }
   }, speed);
 }
