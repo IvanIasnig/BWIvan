@@ -199,7 +199,7 @@ body {
 
 .progress-value {
   position: relative;
-  
+  font-size: 40px;
   font-weight: 600;
   color: white;
 }
@@ -228,8 +228,7 @@ body {
   height: 75%;
   width: 75%;
   border-radius: 50%;
-  background-image: url(/BW1/assets/img/bg.jpg);
-  background-size: 100%;
+  background-color: #0b113b;
 }
 
 .containerButton {
@@ -305,11 +304,13 @@ h3 {
 }
 
 .timer {
-  display: flex;
-  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  font-size: 18px;
+  font-size: 60px;
   text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
+.abc {
+  font-size: 10px;
+}
