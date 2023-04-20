@@ -157,7 +157,7 @@ function resetTimer() {
 
     if (progressStartValue === progressEndValue) {
       clearInterval(y);
-      gestore();
+      gestore()
     }
   }, speed);
 }
