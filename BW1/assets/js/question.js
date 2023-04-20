@@ -157,7 +157,7 @@ function resetTimer() {
 
     if (progressStartValue === progressEndValue) {
       clearInterval(y);
-      gestore();
+      gestore()
     }
   }, speed);
 }
@@ -177,7 +177,7 @@ function gestore() {
     resetTimer();
     x = setInterval(() => {
       a++;
-      document.querxSelector("#piePagina").innerHTML = a + 1;
+      document.querySelector("#piePagina").innerHTML = a + 1;
 
       if (a < questions.length) {
         mostraDomanda(a);
