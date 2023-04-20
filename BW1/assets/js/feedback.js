@@ -19,7 +19,7 @@ function highlightStars() {
   }
 }
 function endTest() {
-  alert("Complimenti hai completato il test!")
+  alert("Complimenti hai completato il test!");
 }
 
 /**Cicli e funzioni sotto servono a dare effetto hover con mouseover e rimuoverlo con mouseout, ma non riusciamo a disabilitarli al click quindi sono negativi per la user experience

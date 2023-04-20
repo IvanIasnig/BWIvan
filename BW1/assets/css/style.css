@@ -220,7 +220,8 @@ body {
   margin-top: 3em;
 }
 
-.torta{
+.torta {
+  position: relative;
   height: 360px;
   width: 360px;
   border-radius: 50%;
@@ -232,6 +233,7 @@ body {
 
 .torta::before {
   content: "";
+  position: absolute;
   height: 75%;
   width: 75%;
   border-radius: 50%;
@@ -258,6 +260,27 @@ body {
 
 }
 
+.primoClass {
+  position: relative;
+  z-index: 1;
+  font-weight: bold;
+}
+.secondoClass {
+  position: relative;
+  z-index: 1;
+  margin-top: 0;
+  color: #00ffff;
+}
+.terzoClass {
+  position: relative;
+  z-index: 1;
+  font-weight: lighter;
+  font-size: 14px;
+  width: 50%;
+  margin: auto;
+  padding-top: 3em;
+  color: white;
+}
 /* stelle feedback */
 
 #rating {
