@@ -151,9 +151,9 @@ function resetTimer() {
   y = setInterval(() => {
     progressStartValue--;
     progressValue.textContent = `${progressStartValue}`;
-    circularProgress.style.background = `conic-gradient(#ffffff ${
+    circularProgress.style.background = `conic-gradient(#936799 ${
       progressStartValue * 12
-    }deg, #ffffff00 0deg)`;
+    }deg, #00ffff 0deg)`;
 
     if (progressStartValue === progressEndValue) {
       clearInterval(y);
