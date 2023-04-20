@@ -244,6 +244,13 @@ body {
   font-size: large;
 }
 
+.btnRes:hover{
+  background-color: #00ffff;
+  color: #0b113b;
+  border: #00ffff;
+
+}
+
 /* stelle feedback */
 
 #rating {
