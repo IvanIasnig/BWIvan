@@ -258,15 +258,16 @@ body {
   margin-top: 3em;
 }
 
-.torta{
+.torta {
   height: 360px;
   width: 360px;
   border-radius: 50%;
-  background: conic-gradient(#D20094 180deg, #00ffff 180deg);
   display: flex;
   align-items: center;
   justify-content: center;
+  background: conic-gradient(#D20094 45deg, #00ffff 45deg);
 }
+
 
 .torta::before {
   content: "";
