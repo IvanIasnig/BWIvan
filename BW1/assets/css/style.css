@@ -177,11 +177,7 @@ body {
   height: 160px;
   width: 160px;
   border-radius: 50%;
-<<<<<<< HEAD
   background: conic-gradient( #D5D5DA 0deg, #0B113B 0deg);
-=======
-  background: conic-gradient(#0b113b 0deg, #d5d5da 0deg);
->>>>>>> 6d56ae812018aefb2e7d7eeae24134a558f2fd4a
   display: flex;
   align-items: center;
   justify-content: center;
@@ -306,4 +302,5 @@ h3 {
   padding: 0.5em;
   padding-left: 2.5em;
   font-family: "Inter", sans-serif;
+  color: white;
 }
