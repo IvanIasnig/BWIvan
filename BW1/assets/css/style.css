@@ -14,7 +14,6 @@ body {
   padding: 2em 6em 0;
 }
 
-/*welcome*/
 
 .main {
   width: 60%;
@@ -134,6 +133,17 @@ body {
   width: 100%;
 }
 
+#colorTen {
+  color: #d20094
+}
+
+/* TIMER */
+
+.circleContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .titleQuest {
   font-family: "Outfit", sans-serif;
   font-size: 3em;
@@ -143,8 +153,10 @@ body {
 
 }
 
-#colorTen {
-  color: #d20094;
+.circle {
+  width: 160px;
+  height: 160px;
+  margin-right: 5em;
 }
 
 #contQuestion {
