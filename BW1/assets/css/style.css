@@ -177,14 +177,14 @@ body {
   height: 160px;
   width: 160px;
   border-radius: 50%;
-  background: conic-gradient( #D5D5DA 0deg, #0B113B 0deg);
+  background: conic-gradient( #b495b8 0deg, #b495b8 0deg);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .circular-progress::before {
-  content: "";
+  content: "seconds remining";
   position: absolute;
   height: 130px;
   width: 130px;
@@ -217,7 +217,7 @@ body {
   height: 360px;
   width: 360px;
   border-radius: 50%;
-  background: conic-gradient(#D20094 90deg, #00ffff 90deg);
+  background: conic-gradient(#D20094 180deg, #00ffff 180deg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -228,7 +228,7 @@ body {
   height: 75%;
   width: 75%;
   border-radius: 50%;
-  background-color: #301459;
+  background-color: #0C113B;
 }
 
 .containerButton{
