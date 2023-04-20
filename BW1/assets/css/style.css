@@ -206,31 +206,6 @@ body {
 
 /*Pagina Results*/
 
-.btnRes {
-  position: fixed;
-  bottom: 0;
-  margin-bottom: 3%;
-  padding: 3vw;
-  margin-left: -5%;
-}
-
-/* stelle feedback */
-
-.feedback {
-  text-align: center;
-}
-
-#rating {
-  font-size: 36px;
-  display: inline-block;
-}
-
-.star {
-  cursor: pointer;
-}
-
-/*result torta*/
-
 .containerResult{
   display: flex;
   justify-content: space-evenly;
@@ -267,4 +242,57 @@ body {
   color: white;
   border-color: white;
   font-size: large;
+}
+
+/* stelle feedback */
+
+#rating {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 7em;
+}
+
+.star {
+  cursor: pointer;  
+  margin: 0.5em;
+
+}
+
+.button2 {
+  width: 50%;
+  height: 7vh;
+  font-size: 140%;
+  background-color: #00ffff;
+  border-color: transparent;
+  font-family: "Inter", sans-serif;
+  font-weight: bolder;
+  box-shadow: 0 0 20px 1px #00ffff;
+}
+.moreInfo {
+  display: flex;
+  width: 40%;
+  margin: auto;
+  justify-content: space-around;
+}
+.feedbackTitle {
+    font-family: "Outfit", sans-serif;
+    font-size: 3em;
+    font-weight: 900;
+    line-height: 1em;
+    margin-top: 4vw;
+}
+h3 {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+.leaveFeedback {
+  width: 60%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: solid 2px #D20094;
+  font-size: 1em;
+  padding: 0.5em;
+  padding-left: 2.5em;
+  font-family: "Inter", sans-serif;
 }
