@@ -204,9 +204,10 @@ body {
 }
 
 .progress-value {
+  display: flex;
   position: relative;
-  font-size: 40px;
-  font-weight: 600;
+  font-size: 60px;
+  font-weight: 500;
   color: white;
 }
 
