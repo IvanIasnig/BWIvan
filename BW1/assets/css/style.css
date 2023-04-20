@@ -228,3 +228,43 @@ body {
 .star {
   cursor: pointer;
 }
+
+/*result torta*/
+
+.containerResult{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 3em;
+}
+
+.torta{
+  height: 360px;
+  width: 360px;
+  border-radius: 50%;
+  background: conic-gradient(#D20094 180deg, #00ffff 180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.torta::before {
+  content: "";
+  height: 75%;
+  width: 75%;
+  border-radius: 50%;
+  background-color: #301459;
+}
+
+.containerButton{
+  text-align: center;
+}
+
+.btnRes{
+  padding: 0.7em;
+  width: 170px;
+  background-color: transparent;
+  color: white;
+  border-color: white;
+  font-size: large;
+}

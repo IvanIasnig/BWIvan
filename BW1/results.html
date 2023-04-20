@@ -5,53 +5,45 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
   <title>Document</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body>
-  <div id="risposte"></div>
+  <header class="header1">
+    <img src="assets/img/epicode_logo.png" alt="Logo - Epicode" class="logo" />
+  </header>
 
-  <div class="pie"></div>
+  <main class="main2">
+    <h1>Results</h1>
+    <h3>The summary of your answers:</h3>
 
-  <div class="circleContainer">
-    <div class="circle">
-      <div class="secondCircle">
-        <div class="innerCircle">
-          <div class="textCircle">SECOND 30</div>
-        </div>
+    <div class="containerResult"> <!--CONTENITORE DELLE PERCETUALI E DELLA TORTA-->
+      <div class="correctResult"> <!--CONTENITORE DELLA PERCETUALE CORRETTA-->
+        <h1>Correct</h1>
+        <h1 id="percetualeCorrect"></h1>
+        <p><span id="quantitaCorrect"></span>/10 questions</p>
       </div>
-    </div>
-  </div>
-  <script src=""></script>
-</body>
-<script src="./assets/js/question.js"></script>
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <header class="header1">
-      <img
-        src="assets/img/epicode_logo.png"
-        alt="Logo - Epicode"
-        class="logo"
-      />
-    </header>
-    <main class="main2">
-      <h1>Results</h1>
-      <br />
-      <h3>The summary of your answers:</h3>
-      <div></div>
-      <div><h1>Correct</h1><div>
-      <div><h1>Wrong</h1></div>
-      <button class="btnRes">RATE US</button>
-    </main>
-    
-  </body>
-  <script src="./assets/js/results.js"></script>
+      <div class="torta"> <!--GRAFICO TORTA-->
+        <span class="testoTorta"></span>
+      </div>
+
+      <div class="WronResult"> <!--CONTENITORE DELLA PERCENTUALE SCORRETTA-->
+        <h1>Wrong</h1>
+        <h1 id="percetualeWrong"></h1>
+        <p><span id="quantitaWrong"></span>/10 questions</p>
+      </div>
+
+  </main>
+
+
+    <div class="containerButton"> <!--CONTENITORE DEL BOTTONE "RATE US"-->
+      <button class="btnRes"><b>RATE US</b></button>
+    </div>
+
+
+</body>
+<script src="./assets/js/results.js"></script>
+
 </html>
