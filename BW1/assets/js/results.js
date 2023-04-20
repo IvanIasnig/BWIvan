@@ -38,10 +38,10 @@ testotorta.innerHTML = `<div style="display: flex; align-items: center; justify-
 let result = document.querySelector('#testoTorta');
 function printResult(partialValue) {
     if (partialValue >= 60) {
-        let cong1 = document.createElement("h4");
+        let cong1 = document.createElement("p");
         let cong2 = document.createTextNode('Congratulations!');
         cong1.appendChild(cong2);
-        let cong3 = document.createElement("h4");
+        let cong3 = document.createElement("p");
         let cong4 = document.createTextNode('You passed the exam');
         cong3.appendChild(cong4);
         let newNode = document.createElement("p")
@@ -55,10 +55,10 @@ function printResult(partialValue) {
         newNode.classList.add("terzoClass");
 
     } else {
-        let cong1 = document.createElement("h4");
+        let cong1 = document.createElement("p");
         let cong2 = document.createTextNode('Unfortunate!');
         cong1.appendChild(cong2);
-        let cong3 = document.createElement("h4");
+        let cong3 = document.createElement("p");
         let cong4 = document.createTextNode('You DIDN\'T pass the exam');
         cong3.appendChild(cong4);
         let newNode = document.createElement("p")
