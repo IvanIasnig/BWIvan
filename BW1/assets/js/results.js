@@ -67,6 +67,9 @@ function printResult(partialValue) {
         cong3.appendChild(newNode);
         cong1.appendChild(cong3);
         result.appendChild(cong1);
+        cong1.classList.add("primoClass");
+        cong3.classList.add("secondoClass");
+        newNode.classList.add("terzoClass");
     }
 }
 printResult(percentage(data, 10));
