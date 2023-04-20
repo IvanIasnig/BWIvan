@@ -14,7 +14,6 @@ body {
   padding: 2em 6em 0;
 }
 
-/*welcome*/
 
 .main {
   width: 60%;
@@ -134,6 +133,17 @@ body {
   width: 100%;
 }
 
+#colorTen {
+  color: #d20094
+}
+
+/* TIMER */
+
+.circleContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .titleQuest {
   font-family: "Outfit", sans-serif;
   font-size: 3em;
@@ -143,8 +153,10 @@ body {
 
 }
 
-#colorTen {
-  color: #d20094;
+.circle {
+  width: 160px;
+  height: 160px;
+  margin-right: 5em;
 }
 
 #contQuestion {
@@ -239,6 +251,49 @@ body {
   color: #0b113b;
   border: #00ffff;
 
+.containerResult{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 3em;
+}
+
+.torta{
+  height: 360px;
+  width: 360px;
+  border-radius: 50%;
+  background: conic-gradient(#D20094 180deg, #00ffff 180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.torta::before {
+  content: "";
+  height: 75%;
+  width: 75%;
+  border-radius: 50%;
+  background-color: #301459;
+}
+
+.containerButton{
+  text-align: center;
+}
+
+.btnRes{
+  padding: 0.7em;
+  width: 170px;
+  background-color: transparent;
+  color: white;
+  border-color: white;
+  font-size: large;
+}
+
+.btnRes:hover{
+  background-color: #00ffff;
+  color: #0b113b;
+  border: #00ffff;
+
 }
 
 /* stelle feedback */
@@ -250,7 +305,7 @@ body {
 }
 
 .star {
-  cursor: pointer;
+  cursor: pointer;  
   margin: 0.5em;
 
 }
@@ -292,6 +347,4 @@ h3 {
   padding: 0.5em;
   padding-left: 2.5em;
   font-family: "Inter", sans-serif;
-  color: white;
 }
-
