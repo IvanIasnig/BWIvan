@@ -13,13 +13,6 @@ document.getElementById("quantitaCorrect").innerHTML = data;
 document.getElementById("percetualeWrong").innerHTML = percentageWrong(data, 10) + "%";
 document.getElementById("quantitaWrong").innerHTML = dataWrong;
 
-/*
-let testotorta = document.querySelector("#testotorta");
-testotorta.innerHTML = `<div style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
-    <span style="font-size: 10px; text-align: center;">SECONDS</span>
-    <span style="font-size: 10px; text-align: center;">REMAINING</span>
-  </div>`;
-  */
 
 let result = document.querySelector('#testoTorta');
 function printResult(partialValue) {
