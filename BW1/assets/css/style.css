@@ -14,7 +14,6 @@ body {
   padding: 2em 6em 0;
 }
 
-/*welcome*/
 
 .main {
   width: 60%;
@@ -134,6 +133,17 @@ body {
   width: 100%;
 }
 
+#colorTen {
+  color: #d20094
+}
+
+/* TIMER */
+
+.circleContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .titleQuest {
   font-family: "Outfit", sans-serif;
   font-size: 3em;
@@ -143,8 +153,10 @@ body {
 
 }
 
-#colorTen {
-  color: #d20094;
+.circle {
+  width: 160px;
+  height: 160px;
+  margin-right: 5em;
 }
 
 #contQuestion {
@@ -201,15 +213,16 @@ body {
   margin-top: 3em;
 }
 
-.torta{
+.torta {
   height: 360px;
   width: 360px;
   border-radius: 50%;
-  background: conic-gradient(#D20094 90deg, #00ffff 90deg);
   display: flex;
   align-items: center;
   justify-content: center;
+  background: conic-gradient(#D20094 45deg, #00ffff 45deg);
 }
+
 
 .torta::before {
   content: "";
@@ -230,6 +243,13 @@ body {
   color: white;
   border-color: white;
   font-size: large;
+}
+
+.btnRes:hover{
+  background-color: #00ffff;
+  color: #0b113b;
+  border: #00ffff;
+
 }
 
 /* stelle feedback */
