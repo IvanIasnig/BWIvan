@@ -150,7 +150,11 @@ function resetTimer() {
 
   y = setInterval(() => {
     progressStartValue--;
-    progressValue.innerHTML = `<div class="timer"><span class="abc">SECONDS</span> <br/>${progressStartValue}<br/><span class="abc">remaining</span></div>`;
+    progressValue.innerHTML = `<div style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+    <span style="font-size: 10px; text-align: center;">SECONDS</span>
+    <span style="text-align: center;">${progressStartValue}</span>
+    <span style="font-size: 10px; text-align: center;">REMAINING</span>
+  </div>`;
     circularProgress.style.background = `conic-gradient(#936799 ${
       progressStartValue * 12
     }deg, #00ffff 0deg)`;
