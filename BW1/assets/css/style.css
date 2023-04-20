@@ -172,11 +172,6 @@ body {
   margin-right: 3.5em;
 }
 
-.seconds {
-  display: flex;
-  justify-content: flex-end;
-  position: absolute;
-}
 
 .circular-progress {
   position: relative;
