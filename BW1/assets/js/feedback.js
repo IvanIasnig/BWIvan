@@ -5,6 +5,7 @@ for (var i = 0; i < stars.length; i++) {
   stars[i].addEventListener("click", function () {
     rating = this.getAttribute("data-rating");
     highlightStars();
+    return;
   });
 }
 
@@ -17,9 +18,11 @@ function highlightStars() {
     }
   }
 }
+function endTest() {
+  alert("Complimenti hai completato il test!")
+}
 
-
-/**Cicli e funzioni sotto servono a dare effetto hover con mouseover e rimuoverlo con mouseout, ma non riusciamo a disabilitarli al click quindi sono negativi per la user experience 
+/**Cicli e funzioni sotto servono a dare effetto hover con mouseover e rimuoverlo con mouseout, ma non riusciamo a disabilitarli al click quindi sono negativi per la user experience
 for (var i = 0; i < stars.length; i++) {
   stars[i].addEventListener("mouseover", function () {
     rating = this.getAttribute("data-rating");
