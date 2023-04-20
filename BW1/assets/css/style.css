@@ -205,7 +205,7 @@ body {
   height: 360px;
   width: 360px;
   border-radius: 50%;
-  background: conic-gradient(#D20094 180deg, #00ffff 180deg);
+  background: conic-gradient(#D20094 90deg, #00ffff 90deg);
   display: flex;
   align-items: center;
   justify-content: center;
