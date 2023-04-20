@@ -133,15 +133,17 @@ body {
   width: 100%;
 }
 
-#colorTen{
-  color:#d20094
+#colorTen {
+  color: #d20094
 }
 
 /* TIMER */
 
-.circleContainer{
+.circleContainer {
   display: flex;
   justify-content: flex-end;
+}
+
 .titleQuest {
   font-family: "Outfit", sans-serif;
   font-size: 3em;
