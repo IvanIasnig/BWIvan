@@ -151,9 +151,7 @@ function resetTimer() {
   y = setInterval(() => {
     progressStartValue--;
     progressValue.textContent = `${progressStartValue}`;
-    circularProgress.style.background = `conic-gradient(#ffffff ${
-      progressStartValue * 12
-    }deg, #ffffff00 0deg)`;
+    circularProgress.style.background = `conic-gradient(#B495B8 ${progressStartValue * 12}deg, #00ffff 0deg)`;
 
     if (progressStartValue === progressEndValue) {
       clearInterval(y);
@@ -185,10 +183,10 @@ function gestore() {
         resetTimer();
       } else {
         clearInterval(x);
-        window.location.href = "results.html";
+        window.location.href="results.html"
       }
     }, 30000);
   } else {
-    window.location.href = "results.html";
+    window.location.href="results.html"
   }
 }
