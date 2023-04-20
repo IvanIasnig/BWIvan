@@ -229,6 +229,7 @@ body {
   width: 75%;
   border-radius: 50%;
   background-image: url(/BW1/assets/img/bg.jpg);
+  background-size: 100%;
 }
 
 .containerButton {
