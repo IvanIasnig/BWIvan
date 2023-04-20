@@ -1,3 +1,5 @@
+
+
 var timeLimit = 60; // Tempo in secondi
 var timePassed = 0; // Tempo trascorso
 var timerInterval; // Variabile per l'intervallo del timer
