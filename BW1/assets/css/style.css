@@ -214,18 +214,19 @@ body {
 }
 
 .torta {
+  position: relative;
   height: 360px;
   width: 360px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: conic-gradient(#D20094 45deg, #00ffff 45deg);
 }
 
 
 .torta::before {
   content: "";
+  position: absolute;
   height: 75%;
   width: 75%;
   border-radius: 50%;
