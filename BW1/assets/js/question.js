@@ -169,18 +169,18 @@ function resetTimer() {
 gestore();
 mostraDomanda(a);
 
-document.querySelector("#piePagina").innerHTML = a + 1;
-
 function gestore() {
-  a++;
   document.querySelector("#piePagina").innerHTML = a + 1;
 
   if (a < questions.length) {
     mostraDomanda(a);
     clearInterval(x);
     resetTimer();
+
     x = setInterval(() => {
+  
       a++;
+
       document.querySelector("#piePagina").innerHTML = a + 1;
 
       if (a < questions.length) {
@@ -193,27 +193,8 @@ function gestore() {
       }
     }, 30000);
   } else {
+    clearInterval(x)
     window.location.href = "results.html";
   }
 }
 
-/* IDEE DA GPT SU COME CREARE LA PAGINA DEI RISULTATI. IO EVITEREI SAREBBE MOLTO MACCHINOSO
-
-
-// Variables to track correct and incorrect answers
-
-
-// Create a new HTML page to display results
-const newPage = window.open();
-newPage.document.write("<h1>Quiz Results</h1>");
-
-
-// Loop through questions and display each question, correct answer, and user answer
-for (let i = 0; i < questions.length; i++) {
-  newPage.document.write(`<h2>Question ${i+1}</h2>`);
-  newPage.document.write(`<p>${questions[i].question}</p>`);
-  newPage.document.write(`<p>Correct answer: ${questions[i].correctAnswer}</p>`);
-  newPage.document.write(`<p>Your answer: ${questions[i].userAnswer}</p>`);
-} 
-
-*/
