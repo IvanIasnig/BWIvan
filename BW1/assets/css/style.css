@@ -4,7 +4,8 @@ body {
   box-sizing: border-box;
   background-image: url(/BW1/assets/img/bg.jpg);
   background-repeat: no-repeat;
-  background-size: 100vw 100vh;
+  /*background-size: 100vw 100vh;*/
+  background-size: cover;
   color: white;
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -190,12 +191,7 @@ body {
   height: 130px;
   width: 130px;
   border-radius: 50%;
-  background-image: radial-gradient(circle at 37.72% 119.64%,
-      #ff9fff 0,
-      #c787ff 25%,
-      #8f6cd8 50%,
-      #5c51a9 75%,
-      #31397e 100%);
+  background-image: linear-gradient(850deg, #7a2d83, #461561);;
 }
 
 .progress-value {
@@ -210,9 +206,47 @@ body {
 }
 
 /*Pagina Results*/
+.results, .summary, .correct, .wrong, .containerButton{
+  font-family: "Outfit", sans-serif;
+}
+.results{
+  font-size: 3.5em;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.summary{
+  letter-spacing: 0.1rem;
+  margin-top: 0;
+  font-weight: normal;
+}
+
+.correct, .wrong{
+  font-size: 3.5em;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+#percentualeCorrect, #percentualeWrong{
+  font-size: 4em;
+  margin: 0;
+}
+
+.correctResult{
+  text-align: left;
+}
+
+.wrongResult{
+  text-align: right;
+}
+
+.pCorrect, .pWrong{
+  margin: 0;
+}
 
 .containerResult{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 3em;
@@ -235,7 +269,7 @@ body {
   height: 75%;
   width: 75%;
   border-radius: 50%;
-  background-color: #0C113B;
+  background-image: linear-gradient(135deg, #0c113b, #702a76);
 }
 
 .containerButton{
@@ -247,15 +281,16 @@ body {
   width: 170px;
   background-color: transparent;
   color: white;
-  border: solid 3px white;
   font-size: large;
+  border: 2px solid white;
+  box-shadow: 0px 0px 20px 1px  #0091ff2c;
 }
 
 .btnRes:hover{
   background-color: #00ffff;
   color: #0b113b;
   border: #00ffff;
-
+  box-shadow: 0px 0px 20px 1px  #00ffff;
 }
 
 .primoClass {
@@ -284,7 +319,7 @@ body {
 #rating {
   display: flex;
   justify-content: center;
-  margin-bottom: 7em;
+  margin-bottom: 4em;
 }
 
 .star {
@@ -294,7 +329,7 @@ body {
 }
 
 .button2 {
-  margin-top: 2em;
+  margin-top: 4em;
   width: 50%;
   height: 7vh;
   font-size: 140%;
