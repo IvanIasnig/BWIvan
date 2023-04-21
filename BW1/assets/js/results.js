@@ -62,7 +62,7 @@ function printResult(partialValue) {
         let cong4 = document.createTextNode('You DIDN\'T pass the exam');
         cong3.appendChild(cong4);
         let newNode = document.createElement("p")
-        let cong5 = document.createTextNode('We ll send your death certificate in few minutes. Check your email (including promotions / spam folders');
+        let cong5 = document.createTextNode('We\'ll send your death certificate in few minutes. Check your email (including promotions / spam folders');
         newNode.appendChild(cong5)
         cong3.appendChild(newNode);
         cong1.appendChild(cong3);
