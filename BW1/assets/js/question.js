@@ -179,8 +179,11 @@ function gestore() {
     mostraDomanda(a);
     clearInterval(x);
     resetTimer();
+
     x = setInterval(() => {
+  
       a++;
+
       document.querySelector("#piePagina").innerHTML = a + 1;
 
       if (a < questions.length) {
@@ -193,6 +196,7 @@ function gestore() {
       }
     }, 30000);
   } else {
+    clearInterval(x)
     window.location.href = "results.html";
   }
 }
