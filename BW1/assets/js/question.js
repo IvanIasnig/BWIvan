@@ -130,6 +130,7 @@ function mostraDomanda(index) {
       });
     } else {
       radioEl.addEventListener("click", () => {
+        
         resetTimer();
       });
     }
@@ -168,17 +169,16 @@ function resetTimer() {
 gestore();
 mostraDomanda(a);
 
-
 function gestore() {
-  
   a++;
   document.querySelector("#piePagina").innerHTML = a + 1;
 
   if (a < questions.length) {
     mostraDomanda(a);
+
     resetTimer();
   } else {
-    clearInterval(x)
+    clearInterval(x);
     window.location.href = "results.html";
   }
 }
