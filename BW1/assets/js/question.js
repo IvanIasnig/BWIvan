@@ -130,7 +130,7 @@ function mostraDomanda(index) {
       });
     } else {
       radioEl.addEventListener("click", () => {
-        clearInterval(x);
+        
         resetTimer();
       });
     }
@@ -169,34 +169,16 @@ function resetTimer() {
 gestore();
 mostraDomanda(a);
 
-
 function gestore() {
-  
   a++;
   document.querySelector("#piePagina").innerHTML = a + 1;
 
   if (a < questions.length) {
     mostraDomanda(a);
-    clearInterval(x);
+
     resetTimer();
-
-    x = setInterval(() => {
-  
-      a++;
-
-      document.querySelector("#piePagina").innerHTML = a + 1;
-
-      if (a < questions.length) {
-        mostraDomanda(a);
-        clearInterval(x);
-        resetTimer();
-      } else {
-        clearInterval(x);
-        window.location.href = "results.html";
-      }
-    }, 30000);
   } else {
-    clearInterval(x)
+    clearInterval(x);
     window.location.href = "results.html";
   }
 }

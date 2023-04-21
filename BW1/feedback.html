@@ -1,50 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/img/EPICODE-pitto-color.png">
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/img/EPICODE-pitto-color.png" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Feedback</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header1">
-        <img src="assets/img/epicode_logo.png" alt="Logo - Epicode" class="logo" />
+      <img
+        src="assets/img/epicode_logo.png"
+        alt="Logo - Epicode"
+        class="logo"
+      />
     </header>
-    <br>
+    <br />
     <main class="main2">
-        <h1 class="feedbackTitle">Tell us how it's going</h1>
-        <h3>From 0 to 10, how likely are you to recommend EPICODE <br>
-            to a friend or a colleague?</h3>
-        <div id="rating">
-            <img src="./assets/img/blackStar.svg" class="star" data-rating="1">
-            <img src="./assets/img/blackStar.svg" class="star" data-rating="2">
-            <img src="./assets/img/blackStar.svg" class="star" data-rating="3">
-            <img src="./assets/img/blackStar.svg" class="star" data-rating="4">
-            <img src="./assets/img/blackStar.svg" class="star" data-rating="5">
-            <img src="./assets/img/blackStar.svg" class="star" data-rating="6">
-            <img src="./assets/img/blackStar.svg" class="star" data-rating="7">
-            <img src="./assets/img/blackStar.svg" class="star" data-rating="8">
-            <img src="./assets/img/blackStar.svg" class="star" data-rating="9">
-            <img src="./assets/img/blackStar.svg" class="star" data-rating="10">
+      <h1 class="feedbackTitle">Tell us how it's going</h1>
+      <h3>
+        From 0 to 10, how likely are you to recommend EPICODE <br />
+        to a friend or a colleague?
+      </h3>
+      <div id="rating">
+        <img src="./assets/img/blackStar.svg" class="star" data-rating="1" />
+        <img src="./assets/img/blackStar.svg" class="star" data-rating="2" />
+        <img src="./assets/img/blackStar.svg" class="star" data-rating="3" />
+        <img src="./assets/img/blackStar.svg" class="star" data-rating="4" />
+        <img src="./assets/img/blackStar.svg" class="star" data-rating="5" />
+        <img src="./assets/img/blackStar.svg" class="star" data-rating="6" />
+        <img src="./assets/img/blackStar.svg" class="star" data-rating="7" />
+        <img src="./assets/img/blackStar.svg" class="star" data-rating="8" />
+        <img src="./assets/img/blackStar.svg" class="star" data-rating="9" />
+        <img src="./assets/img/blackStar.svg" class="star" data-rating="10" />
+      </div>
+
+      <form
+        action="https://formspree.io/f/xnqylvdb"
+        method="POST"
+        target="_blank"
+      >
+        <label for="leaveFeedback"
+          ><h3>
+            Leave us an open feedback about your experience so far
+          </h3></label
+        >
+        <input
+          type="text"
+          id="leaveFeedback"
+          name="leaveFeedback"
+          class="leaveFeedback"
+          placeholder="Write your comment here"
+          required
+        />
+        <div class="moreInfo">
+          <button type="submit" class="button2" onclick="endTest()">
+            MORE INFO
+          </button>
         </div>
-
-        
-
-        <form action="https://formspree.io/f/xnqylvdb" method="POST" target="_blank">
-            <label for="leaveFeedback"><h3>Leave us an open feedback about your experience so far</h3></label>
-            <input type="text" id="leaveFeedback" name="leaveFeedback" class="leaveFeedback" placeholder="Write your comment here" required>
-            <div class="moreInfo">
-                <button type="submit" class="button2" onclick="endTest()">
-                    MORE INFO
-                </button>
-            </div>
-        </form>
+      </form>
     </main>
 
     <script src="./assets/js/feedback.js"></script>
-</body>
-
+  </body>
 </html>
