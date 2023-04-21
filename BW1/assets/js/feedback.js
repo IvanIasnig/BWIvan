@@ -1,4 +1,7 @@
 let data = sessionStorage.getItem(1);
+if (data == null) {
+  data = 0;
+}
 var rating = 0;
 var stars = document.querySelectorAll("#rating .star");
 if (data == null) {
