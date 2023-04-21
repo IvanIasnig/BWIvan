@@ -196,24 +196,3 @@ function gestore() {
     window.location.href = "results.html";
   }
 }
-
-/* IDEE DA GPT SU COME CREARE LA PAGINA DEI RISULTATI. IO EVITEREI SAREBBE MOLTO MACCHINOSO
-
-
-// Variables to track correct and incorrect answers
-
-
-// Create a new HTML page to display results
-const newPage = window.open();
-newPage.document.write("<h1>Quiz Results</h1>");
-
-
-// Loop through questions and display each question, correct answer, and user answer
-for (let i = 0; i < questions.length; i++) {
-  newPage.document.write(`<h2>Question ${i+1}</h2>`);
-  newPage.document.write(`<p>${questions[i].question}</p>`);
-  newPage.document.write(`<p>Correct answer: ${questions[i].correctAnswer}</p>`);
-  newPage.document.write(`<p>Your answer: ${questions[i].userAnswer}</p>`);
-} 
-
-*/
