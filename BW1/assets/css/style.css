@@ -190,12 +190,7 @@ body {
   height: 130px;
   width: 130px;
   border-radius: 50%;
-  background-image: radial-gradient(circle at 37.72% 119.64%,
-      #ff9fff 0,
-      #c787ff 25%,
-      #8f6cd8 50%,
-      #5c51a9 75%,
-      #31397e 100%);
+  background-image: linear-gradient(850deg, #7a2d83, #461561);;
 }
 
 .progress-value {
@@ -235,7 +230,7 @@ body {
   height: 75%;
   width: 75%;
   border-radius: 50%;
-  background-color: #0C113B;
+  background-image: linear-gradient(135deg, #0c113b, #702a76);
 }
 
 .containerButton{
