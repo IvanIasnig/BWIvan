@@ -169,7 +169,10 @@ function resetTimer() {
 gestore();
 mostraDomanda(a);
 
+
 function gestore() {
+  
+  a++;
   document.querySelector("#piePagina").innerHTML = a + 1;
 
   if (a < questions.length) {
@@ -197,4 +200,3 @@ function gestore() {
     window.location.href = "results.html";
   }
 }
-

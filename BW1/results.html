@@ -3,10 +3,10 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="assets/img/EPICODE-pitto-color.png">
   <link rel="stylesheet" href="./assets/css/style.css" />
-  <title>Document</title>
+  <title>Quiz Results</title>
 </head>
 
 <body>
@@ -15,35 +15,35 @@
   </header>
 
   <main class="main2">
-    <h1>Results</h1>
-    <h3>The summary of your answers:</h3>
+    <h1 class="results">Results</h1>
+    <h3 class="summary">The summary of your answers:</h3>
 
     <div class="containerResult"> <!--CONTENITORE DELLE PERCETUALI E DELLA TORTA-->
       <div class="correctResult"> <!--CONTENITORE DELLA PERCETUALE CORRETTA-->
-        <h1>Correct</h1>
-        <h1 id="percetualeCorrect"></h1>
-        <p><span id="quantitaCorrect"></span>/10 questions</p>
+        <h1 class="correct">Correct</h1>
+        <h1 id="percentualeCorrect"></h1>
+        <p class="pCorrect"><span id="quantitaCorrect"></span>/10 questions</p>
       </div>
 
       <div class="torta"> <!--GRAFICO TORTA-->
         <span id="testoTorta"></span>
       </div>
 
-      <div class="WronResult"> <!--CONTENITORE DELLA PERCENTUALE SCORRETTA-->
-        <h1>Wrong</h1>
-        <h1 id="percetualeWrong"></h1>
-        <p><span id="quantitaWrong"></span>/10 questions</p>
+      <div class="wrongResult"> <!--CONTENITORE DELLA PERCENTUALE SCORRETTA-->
+        <h1 class="wrong">Wrong</h1>
+        <h1 id="percentualeWrong"></h1>
+        <p class="pWrong"><span id="quantitaWrong"></span>/10 questions</p>
       </div>
 
   </main>
 
 
-      <div class="containerButton"> <!--CONTENITORE DEL BOTTONE "RATE US"-->
-        <form action="./feedback.html">
-          <button type="submit" class="btnRes"><b>RATE US</b></button>
-        </form>
-      </div>
-    </div>
+  <div class="containerButton"> <!--CONTENITORE DEL BOTTONE "RATE US"-->
+    <form action="./feedback.html">
+      <button type="submit" class="btnRes"><b>RATE US</b></button>
+    </form>
+  </div>
+  </div>
 
 
 </body>

@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/EPICODE-pitto-color.png">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Document</title>
+    <title>Feedback</title>
 </head>
 
 <body>
@@ -16,7 +16,7 @@
     <br>
     <main class="main2">
         <h1 class="feedbackTitle">Tell us how it's going</h1>
-        <h3>From 0 to 10, how likely are you to recommend Eh3ICODE <br>
+        <h3>From 0 to 10, how likely are you to recommend EPICODE <br>
             to a friend or a colleague?</h3>
         <div id="rating">
             <img src="./assets/img/blackStar.svg" class="star" data-rating="1">
@@ -31,16 +31,19 @@
             <img src="./assets/img/blackStar.svg" class="star" data-rating="10">
         </div>
 
-        <h3>Leave us an open feedback about your experience so far</h3>
+        
 
-        <input type="text" class="leaveFeedback" placeholder="Write your comment here">
-
+        <form action="https://formspree.io/f/xnqylvdb" method="POST" target="_blank">
+            <label for="leaveFeedback"><h3>Leave us an open feedback about your experience so far</h3></label>
+            <input type="text" id="leaveFeedback" name="leaveFeedback" class="leaveFeedback" placeholder="Write your comment here" required>
+            <div class="moreInfo">
+                <button type="submit" class="button2" onclick="endTest()">
+                    MORE INFO
+                </button>
+            </div>
+        </form>
     </main>
-    <div class="moreInfo">
-        <button type="button" class="button2" onclick="endTest()">
-            MORE INFO
-        </button>
-    </div>
+
     <script src="./assets/js/feedback.js"></script>
 </body>
 

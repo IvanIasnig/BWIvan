@@ -1,5 +1,9 @@
+let data = sessionStorage.getItem(1);
 var rating = 0;
 var stars = document.querySelectorAll("#rating .star");
+if (data == null) {
+  data = 0;
+}
 
 for (var i = 0; i < stars.length; i++) {
   stars[i].addEventListener("click", function () {
@@ -18,8 +22,10 @@ function highlightStars() {
     }
   }
 }
+
 function endTest() {
-  alert("Complimenti hai completato il test!");
+  alert("Congrats, you completed your test! Your score was " + data +"/10. You rated EPICODE " + rating + "/10. " + "Your feedback: ' " +  document.querySelector('.leaveFeedback').value + " '");
+  /*document.querySelector('.leaveFeedback').value = '';*/
 }
 
 /**Cicli e funzioni sotto servono a dare effetto hover con mouseover e rimuoverlo con mouseout, ma non riusciamo a disabilitarli al click quindi sono negativi per la user experience
