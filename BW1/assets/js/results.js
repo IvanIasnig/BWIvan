@@ -1,5 +1,8 @@
 let data = sessionStorage.getItem(1);
 let dataWrong = data != null ? 10 - data : 10; // se non arriva nulla da data imposta datawrong a 10
+if (data == null) {
+    data = 0;
+  }
 
 function percentage(partialValue, totalValue) {
     return (partialValue / totalValue) * 100;
