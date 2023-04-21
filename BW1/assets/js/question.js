@@ -150,12 +150,18 @@ function resetTimer() {
 
   y = setInterval(() => {
     progressStartValue--;
-    progressValue.textContent = `${progressStartValue}`;
-    circularProgress.style.background = `conic-gradient(#B495B8 ${progressStartValue * 12}deg, #00ffff 0deg)`;
+    progressValue.innerHTML = `<div style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+    <span style="font-size: 10px; text-align: center;">SECONDS</span>
+    <span style="text-align: center;">${progressStartValue}</span>
+    <span style="font-size: 10px; text-align: center;">REMAINING</span>
+  </div>`;
+    circularProgress.style.background = `conic-gradient(#936799 ${
+      progressStartValue * 12
+    }deg, #00ffff 0deg)`;
 
     if (progressStartValue === progressEndValue) {
       clearInterval(y);
-      gestore()
+      gestore();
     }
   }, speed);
 }
@@ -183,10 +189,31 @@ function gestore() {
         resetTimer();
       } else {
         clearInterval(x);
-        window.location.href="results.html"
+        window.location.href = "results.html";
       }
     }, 30000);
   } else {
-    window.location.href="results.html"
+    window.location.href = "results.html";
   }
 }
+
+/* IDEE DA GPT SU COME CREARE LA PAGINA DEI RISULTATI. IO EVITEREI SAREBBE MOLTO MACCHINOSO
+
+
+// Variables to track correct and incorrect answers
+
+
+// Create a new HTML page to display results
+const newPage = window.open();
+newPage.document.write("<h1>Quiz Results</h1>");
+
+
+// Loop through questions and display each question, correct answer, and user answer
+for (let i = 0; i < questions.length; i++) {
+  newPage.document.write(`<h2>Question ${i+1}</h2>`);
+  newPage.document.write(`<p>${questions[i].question}</p>`);
+  newPage.document.write(`<p>Correct answer: ${questions[i].correctAnswer}</p>`);
+  newPage.document.write(`<p>Your answer: ${questions[i].userAnswer}</p>`);
+} 
+
+*/
