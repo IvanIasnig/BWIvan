@@ -8,10 +8,10 @@ function percentage(partialValue, totalValue) {
 function percentageWrong(partialValue, totalValue) {
   return [(totalValue - partialValue) / totalValue] * 100;
 }
-document.getElementById("percetualeCorrect").innerHTML =
+document.getElementById("percentualeCorrect").innerHTML =
   percentage(data, 10) + "%";
 document.getElementById("quantitaCorrect").innerHTML = data;
-document.getElementById("percetualeWrong").innerHTML =
+document.getElementById("percentualeWrong").innerHTML =
   percentageWrong(data, 10) + "%";
 document.getElementById("quantitaWrong").innerHTML = dataWrong;
 
@@ -22,7 +22,7 @@ torta.style.background = `conic-gradient(#D20094 ${angolo}deg, #00ffff ${angolo}
 function percentageWrong(partialValue, totalValue) {
     return [(totalValue - partialValue) / totalValue] * 100;
 }
-document.getElementById("percetualeCorrect").innerHTML = percentage(data, 10) + "%";
+document.getElementById("percentualeCorrect").innerHTML = percentage(data, 10) + "%";
 document.getElementById("quantitaCorrect").innerHTML = data;
-document.getElementById("percetualeWrong").innerHTML = percentageWrong(data, 10) + "%";
+document.getElementById("percentualeWrong").innerHTML = percentageWrong(data, 10) + "%";
 document.getElementById("quantitaWrong").innerHTML = dataWrong;
