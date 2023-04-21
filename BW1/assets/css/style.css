@@ -134,7 +134,7 @@ body {
 }
 
 #colorTen {
-  color: #d20094
+  color: #d20094;
 }
 
 /* TIMER */
@@ -172,12 +172,13 @@ body {
   margin-right: 3.5em;
 }
 
+
 .circular-progress {
   position: relative;
   height: 160px;
   width: 160px;
   border-radius: 50%;
-  background: conic-gradient(#b495b8 0deg, #936799 0deg);
+  background: conic-gradient( #b495b8 0deg, #b495b8 0deg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -198,9 +199,13 @@ body {
 }
 
 .progress-value {
+  display: flex;
+  display: flex;
   position: relative;
-  font-size: 40px;
-  font-weight: 600;
+  font-size: 60px;
+  font-weight: 500;
+  font-size: 60px;
+  font-weight: 500;
   color: white;
 }
 
@@ -218,11 +223,11 @@ body {
   height: 360px;
   width: 360px;
   border-radius: 50%;
+  background: conic-gradient(#D20094 180deg, #00ffff 180deg);
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 
 .torta::before {
   content: "";
@@ -230,7 +235,7 @@ body {
   height: 75%;
   width: 75%;
   border-radius: 50%;
-  background-color: #301459;
+  background-color: #0C113B;
 }
 
 .containerButton{
