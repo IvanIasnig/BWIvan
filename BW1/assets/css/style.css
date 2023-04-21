@@ -247,7 +247,7 @@ body {
   width: 170px;
   background-color: transparent;
   color: white;
-  border-color: white;
+  border: solid 3px white;
   font-size: large;
 }
 
