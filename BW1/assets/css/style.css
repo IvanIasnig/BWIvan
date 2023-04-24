@@ -11,10 +11,11 @@ body {
   font-size: 16px;
 }
 
+/*Welcome page*/
+
 .header1 {
   padding: 2em 6em 0;
 }
-
 
 .main {
   width: 60%;
@@ -151,7 +152,6 @@ body {
   font-weight: 400;
   line-height: 1em;
   margin-bottom: 4vw;
-
 }
 
 .circle {
@@ -173,13 +173,12 @@ body {
   margin-right: 3.5em;
 }
 
-
 .circular-progress {
   position: relative;
   height: 160px;
   width: 160px;
   border-radius: 50%;
-  background: conic-gradient( #b495b8 0deg, #b495b8 0deg);
+  background: conic-gradient(#b495b8 0deg, #b495b8 0deg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -191,7 +190,7 @@ body {
   height: 130px;
   width: 130px;
   border-radius: 50%;
-  background-image: linear-gradient(850deg, #7a2d83, #461561);;
+  background-image: linear-gradient(850deg, #7a2d83, #461561);
 }
 
 .progress-value {
@@ -206,45 +205,52 @@ body {
 }
 
 /*Pagina Results*/
-.results, .summary, .correct, .wrong, .containerButton{
+.results,
+.summary,
+.correct,
+.wrong,
+.containerButton {
   font-family: "Outfit", sans-serif;
 }
-.results{
+.results {
   font-size: 3.5em;
   font-weight: bold;
   margin-bottom: 0;
 }
 
-.summary{
+.summary {
   letter-spacing: 0.1rem;
   margin-top: 0;
   font-weight: normal;
 }
 
-.correct, .wrong{
+.correct,
+.wrong {
   font-size: 3.5em;
   font-weight: normal;
   margin-bottom: 0;
 }
 
-#percentualeCorrect, #percentualeWrong{
+#percentualeCorrect,
+#percentualeWrong {
   font-size: 4em;
   margin: 0;
 }
 
-.correctResult{
+.correctResult {
   text-align: left;
 }
 
-.wrongResult{
+.wrongResult {
   text-align: right;
 }
 
-.pCorrect, .pWrong{
+.pCorrect,
+.pWrong {
   margin: 0;
 }
 
-.containerResult{
+.containerResult {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -257,7 +263,7 @@ body {
   height: 360px;
   width: 360px;
   border-radius: 50%;
-  background: conic-gradient(#D20094 180deg, #00ffff 180deg);
+  background: conic-gradient(#d20094 180deg, #00ffff 180deg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -272,25 +278,25 @@ body {
   background-image: linear-gradient(135deg, #0c113b, #702a76);
 }
 
-.containerButton{
+.containerButton {
   text-align: center;
 }
 
-.btnRes{
+.btnRes {
   padding: 0.7em;
   width: 170px;
   background-color: transparent;
   color: white;
   font-size: large;
   border: 2px solid white;
-  box-shadow: 0px 0px 20px 1px  #0091ff2c;
+  box-shadow: 0px 0px 20px 1px #0091ff2c;
 }
 
-.btnRes:hover{
+.btnRes:hover {
   background-color: #00ffff;
   color: #0b113b;
   border: #00ffff;
-  box-shadow: 0px 0px 20px 1px  #00ffff;
+  box-shadow: 0px 0px 20px 1px #00ffff;
 }
 
 .primoClass {
@@ -323,9 +329,8 @@ body {
 }
 
 .star {
-  cursor: pointer;  
+  cursor: pointer;
   margin: 0.5em;
-
 }
 
 .button2 {
@@ -346,11 +351,11 @@ body {
   justify-content: space-around;
 }
 .feedbackTitle {
-    font-family: "Outfit", sans-serif;
-    font-size: 3em;
-    font-weight: 900;
-    line-height: 1em;
-    margin-top: 4vw;
+  font-family: "Outfit", sans-serif;
+  font-size: 3em;
+  font-weight: 900;
+  line-height: 1em;
+  margin-top: 4vw;
 }
 h3 {
   font-size: 1.5em;
@@ -361,7 +366,7 @@ h3 {
   background-color: transparent;
   border: none;
   outline: none;
-  border-bottom: solid 2px #D20094;
+  border-bottom: solid 2px #d20094;
   font-size: 1em;
   padding: 0.5em;
   padding-left: 2.5em;

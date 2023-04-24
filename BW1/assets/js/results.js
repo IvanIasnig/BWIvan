@@ -22,6 +22,7 @@ let angolo = dataWrong * 36;
 let torta = document.querySelector(".torta");
 torta.style.background = `conic-gradient(#D20094 ${angolo}deg, #00ffff ${angolo}deg)`;
 
+
 let result = document.querySelector("#testoTorta");
 function printResult(partialValue) {
   if (partialValue >= 60) {
